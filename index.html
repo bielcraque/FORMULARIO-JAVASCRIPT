@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form>
+      <div>
+        <label for="name">Nome:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Coloque seu nome"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="senha">Senha:</label>
+        <p>A senha deve ter entre 4 a 10 caracteres</p>
+        <input
+          type="password"
+          id="senha"
+          name="senha"
+          placeholder="Coloque sua senha"
+          pattern=".{4,10}"
+          required
+        />
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
